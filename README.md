@@ -25,7 +25,7 @@ En este trabajo práctico se exploró el uso de DeepNote como entorno de desarro
 
 ### Enlace
 
-001 DeepNote/0001 DeepNote.ipynb
+001-DeepNote/001-DeepNote.ipynb
 
 
 ## TP 02: Introducción a la Programación en Python
@@ -36,7 +36,7 @@ En este trabajo práctico se abordaron los conceptos fundamentales de programaci
 
 ### Enlace
 
-002 Python_Repaso/002–PythonRepaso-DiazFranco.ipynb
+002-Python_Repaso/002–PythonRepaso-DiazFranco.ipynb
 
 ## TP 03: Python Librerías
 
@@ -55,7 +55,7 @@ En este trabajo práctico se exploró el ecosistema de librerías de Python más
 
 ### Enlace
 
-003 Python_Librerias/003–PythonLibrerias-DiazFranco.ipynb
+003-Python_Librerias/003–PythonLibrerias-DiazFranco.ipynb
 
 
 ## TP 03: Control de Versiones con Git y GitHub
@@ -84,4 +84,4 @@ El Trabajo Práctico Integrador consiste en el desarrollo de un proyecto aplicad
 
 ### Enlace
 
-004-TPI/
+004-TPI-EDA/
