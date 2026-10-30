@@ -1,0 +1,2086 @@
+metadata:
+  createdAt: 2026-08-25T19:43:14.632Z
+  modifiedAt: 2026-10-30T16:50:27.528Z
+project:
+  id: f91bfa8f-f4dc-4813-904a-6c7fc26eb726
+  name: 2026 DSIA
+  notebooks:
+    - blocks:
+        - id: ff98059413174bc08e73ebbe72317f59
+          blockGroup: 80fa4ed41305461ba04fc27726c12b6f
+          sortingKey: "000000"
+          type: text-cell-h1
+          content: TP1 EDA
+          metadata:
+            formattedRanges: []
+        - id: 2e18f8a0eccd4563a250aae324144a56
+          blockGroup: 735b806b1cfe4469930fc78f3f10d277
+          sortingKey: "000001"
+          type: text-cell-p
+          content: Franco Diaz
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 11
+                fromCodePoint: 0
+        - id: 13e5065cfdec4c6ba244b0e0f33b53f6
+          blockGroup: db721269d58d4d43b6e139fa7b63a131
+          sortingKey: "000002"
+          type: text-cell-p
+          content: "Dataset: Estimaciones Agrícolas de Argentina"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 8
+                fromCodePoint: 0
+        - id: 1d1f517b700649bf8d0e98f7b10522d2
+          blockGroup: 0bca8503135040bab4308cb6d35ff7b7
+          sortingKey: "000003"
+          type: text-cell-p
+          content: "Descripción: El conjunto de datos contiene información agrícola histórica relacionada con cultivos, campañas,
+            provincias, departamentos, superficie sembrada, superficie cosechada, producción y rendimiento."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 13
+                fromCodePoint: 0
+        - id: 402deb9fa0b848598d512913c337ab07
+          blockGroup: 30d097c6dc8348b8acc3c41b6cc0480f
+          sortingKey: "000004"
+          type: text-cell-p
+          content: ""
+          metadata:
+            formattedRanges: []
+        - id: 154b307ffa0f45fca75ac20c44724f8c
+          blockGroup: 2e422ab94c34495f983a91bdd95e2d29
+          sortingKey: "000005"
+          type: text-cell-p
+          content: Carga del dataset y de las librerias necesarias para el EDA
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 59
+                fromCodePoint: 0
+        - id: a72331ae33fc447a8dacad3eee2ef89b
+          blockGroup: ebbb91f9671d404d89663d3c402e7d2c
+          sortingKey: "000006"
+          contentHash: deaa6ab6
+          executionCount: 1
+          executionFinishedAt: 2026-09-18T02:30:42.134Z
+          executionStartedAt: 2026-09-18T02:30:38.225Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 1
+              data:
+                application/vnd.deepnote.dataframe.v3+json:
+                  column_count: 11
+                  columns:
+                    - name: cultivo
+                      dtype: object
+                    - name: anio
+                      dtype: int64
+                    - name: campania
+                      dtype: object
+                    - name: provincia
+                      dtype: object
+                    - name: provincia_id
+                      dtype: float64
+                    - name: departamento
+                      dtype: object
+                    - name: departamento_id
+                      dtype: float64
+                    - name: superficie_sembrada_ha
+                      dtype: int64
+                    - name: superficie_cosechada_ha
+                      dtype: int64
+                    - name: produccion_tm
+                      dtype: int64
+                    - name: rendimiento_kgxha
+                      dtype: int64
+                    - name: _deepnote_index_column
+                      dtype: int64
+                  row_count: 160499
+                  preview_row_count: 160499
+                  rows:
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: 25 de Mayo
+                      departamento_id: 6854
+                      superficie_sembrada_ha: 3
+                      superficie_cosechada_ha: 3
+                      produccion_tm: 10
+                      rendimiento_kgxha: 3333
+                      _deepnote_index_column: 0
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Adolfo Gonzales Chaves
+                      departamento_id: 6014
+                      superficie_sembrada_ha: 15
+                      superficie_cosechada_ha: 15
+                      produccion_tm: 82
+                      rendimiento_kgxha: 5467
+                      _deepnote_index_column: 1
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Almirante Brown
+                      departamento_id: 6028
+                      superficie_sembrada_ha: 2
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 8
+                      rendimiento_kgxha: 4000
+                      _deepnote_index_column: 2
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Balcarce
+                      departamento_id: 6063
+                      superficie_sembrada_ha: 450
+                      superficie_cosechada_ha: 450
+                      produccion_tm: 2025
+                      rendimiento_kgxha: 4500
+                      _deepnote_index_column: 3
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Cañuelas
+                      departamento_id: 6134
+                      superficie_sembrada_ha: 2
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 7
+                      rendimiento_kgxha: 3500
+                      _deepnote_index_column: 4
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: General Alvarado
+                      departamento_id: 6280
+                      superficie_sembrada_ha: 7
+                      superficie_cosechada_ha: 7
+                      produccion_tm: 31
+                      rendimiento_kgxha: 4429
+                      _deepnote_index_column: 5
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Saladillo
+                      departamento_id: 6707
+                      superficie_sembrada_ha: 2
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 6
+                      rendimiento_kgxha: 3000
+                      _deepnote_index_column: 6
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Entre Ríos
+                      provincia_id: 30
+                      departamento: Tala
+                      departamento_id: 30091
+                      superficie_sembrada_ha: 3
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 3
+                      rendimiento_kgxha: 1500
+                      _deepnote_index_column: 7
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Entre Ríos
+                      provincia_id: 30
+                      departamento: Uruguay
+                      departamento_id: 30098
+                      superficie_sembrada_ha: 16
+                      superficie_cosechada_ha: 14
+                      produccion_tm: 24
+                      rendimiento_kgxha: 1714
+                      _deepnote_index_column: 8
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Salto
+                      departamento_id: 6714
+                      superficie_sembrada_ha: 5
+                      superficie_cosechada_ha: 5
+                      produccion_tm: 12
+                      rendimiento_kgxha: 2400
+                      _deepnote_index_column: 9
+                  type: dataframe
+                text/plain: >2-
+                             cultivo  anio   campania     provincia  provincia_id  \
+                  0              ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  1              ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  2              ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  3              ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  4              ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  ...            ...   ...        ...           ...           ...   
+
+                  160494  yerba mate  2024  2023/2024      Misiones          54.0   
+
+                  160495  yerba mate  2024  2023/2024      Misiones          54.0   
+
+                  160496  yerba mate  2024  2023/2024      Misiones          54.0   
+
+                  160497  yerba mate  2024  2023/2024      Misiones          54.0   
+
+                  160498  yerba mate  2024  2023/2024      Misiones          54.0   
+
+                                    departamento  departamento_id  superficie_sembrada_ha  \
+                  0                   25 de Mayo           6854.0                       3   
+
+                  1       Adolfo Gonzales Chaves           6014.0                      15   
+
+                  2              Almirante Brown           6028.0                       2   
+
+                  3                     Balcarce           6063.0                     450   
+
+                  4                     Cañuelas           6134.0                       2   
+
+                  ...                        ...              ...                     ...   
+
+                  160494               Apóstoles          54007.0                   18197   
+
+                  160495                Cainguás          54014.0                   21264   
+
+                  160496             San Ignacio          54098.0                   18933   
+
+                  160497                   Oberá          54091.0                   25327   
+
+                  160498                 Guaraní          54056.0                   15839   
+
+                          superficie_cosechada_ha  produccion_tm  rendimiento_kgxha  
+                  0                             3             10               3333  
+
+                  1                            15             82               5467  
+
+                  2                             2              8               4000  
+
+                  3                           450           2025               4500  
+
+                  4                             2              7               3500  
+
+                  ...                         ...            ...                ...  
+
+                  160494                    16843          76635               4550  
+
+                  160495                    19814          89161               4500  
+
+                  160496                    17826          83784               4700  
+
+                  160497                    24199         113738               4700  
+
+                  160498                    13996          74180               5300  
+
+
+                  [160499 rows x 11 columns]
+                text/html: >-
+                  <div>
+
+                  <style scoped>
+                      .dataframe tbody tr th:only-of-type {
+                          vertical-align: middle;
+                      }
+
+                      .dataframe tbody tr th {
+                          vertical-align: top;
+                      }
+
+                      .dataframe thead th {
+                          text-align: right;
+                      }
+                  </style>
+
+                  <table border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align: right;">
+                        <th></th>
+                        <th>cultivo</th>
+                        <th>anio</th>
+                        <th>campania</th>
+                        <th>provincia</th>
+                        <th>provincia_id</th>
+                        <th>departamento</th>
+                        <th>departamento_id</th>
+                        <th>superficie_sembrada_ha</th>
+                        <th>superficie_cosechada_ha</th>
+                        <th>produccion_tm</th>
+                        <th>rendimiento_kgxha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>0</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>25 de Mayo</td>
+                        <td>6854.0</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>3333</td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Adolfo Gonzales Chaves</td>
+                        <td>6014.0</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>82</td>
+                        <td>5467</td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Almirante Brown</td>
+                        <td>6028.0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>4000</td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Balcarce</td>
+                        <td>6063.0</td>
+                        <td>450</td>
+                        <td>450</td>
+                        <td>2025</td>
+                        <td>4500</td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Cañuelas</td>
+                        <td>6134.0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <th>...</th>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                      </tr>
+                      <tr>
+                        <th>160494</th>
+                        <td>yerba mate</td>
+                        <td>2024</td>
+                        <td>2023/2024</td>
+                        <td>Misiones</td>
+                        <td>54.0</td>
+                        <td>Apóstoles</td>
+                        <td>54007.0</td>
+                        <td>18197</td>
+                        <td>16843</td>
+                        <td>76635</td>
+                        <td>4550</td>
+                      </tr>
+                      <tr>
+                        <th>160495</th>
+                        <td>yerba mate</td>
+                        <td>2024</td>
+                        <td>2023/2024</td>
+                        <td>Misiones</td>
+                        <td>54.0</td>
+                        <td>Cainguás</td>
+                        <td>54014.0</td>
+                        <td>21264</td>
+                        <td>19814</td>
+                        <td>89161</td>
+                        <td>4500</td>
+                      </tr>
+                      <tr>
+                        <th>160496</th>
+                        <td>yerba mate</td>
+                        <td>2024</td>
+                        <td>2023/2024</td>
+                        <td>Misiones</td>
+                        <td>54.0</td>
+                        <td>San Ignacio</td>
+                        <td>54098.0</td>
+                        <td>18933</td>
+                        <td>17826</td>
+                        <td>83784</td>
+                        <td>4700</td>
+                      </tr>
+                      <tr>
+                        <th>160497</th>
+                        <td>yerba mate</td>
+                        <td>2024</td>
+                        <td>2023/2024</td>
+                        <td>Misiones</td>
+                        <td>54.0</td>
+                        <td>Oberá</td>
+                        <td>54091.0</td>
+                        <td>25327</td>
+                        <td>24199</td>
+                        <td>113738</td>
+                        <td>4700</td>
+                      </tr>
+                      <tr>
+                        <th>160498</th>
+                        <td>yerba mate</td>
+                        <td>2024</td>
+                        <td>2023/2024</td>
+                        <td>Misiones</td>
+                        <td>54.0</td>
+                        <td>Guaraní</td>
+                        <td>54056.0</td>
+                        <td>15839</td>
+                        <td>13996</td>
+                        <td>74180</td>
+                        <td>5300</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p>160499 rows × 11 columns</p>
+
+                  </div>
+              metadata:
+                table_state_spec: null
+          type: code
+          content: >-
+            import pandas as pd
+
+            import numpy as np
+
+            import matplotlib.pyplot as plt
+
+            import seaborn as sns
+
+
+            df = pd.read_csv("estimaciones-agricolas-2026-03 (1).csv")
+
+            df
+          metadata:
+            execution_start: 1789698638225
+            execution_millis: 3909
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 961a99cf8ec242518f90f60105b58308
+          blockGroup: 396abf6b98f4402db58b5a5fa1bdd3fd
+          sortingKey: "000007"
+          type: text-cell-p
+          content: Dimensiones del Dataset
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 23
+                fromCodePoint: 0
+        - id: 223d0f8a992a40dd9b3a1734b6f347c7
+          blockGroup: e9c05ef0806849228d31f4cf66c03da5
+          sortingKey: "000008"
+          type: text-cell-p
+          content: El conjunto de datos contiene 160.499 filas y 11 columnas.
+          metadata:
+            formattedRanges: []
+        - id: 0665840fe08d433ead1031b9095a542f
+          blockGroup: 31d16a2bb2a7476da19eaf727416cc1c
+          sortingKey: "000009"
+          contentHash: 14f60b8f
+          executionCount: 2
+          executionFinishedAt: 2026-09-18T02:30:42.180Z
+          executionStartedAt: 2026-09-18T02:30:42.179Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 2
+              data:
+                text/plain: (160499, 11)
+              metadata: {}
+          type: code
+          content: df.shape
+          metadata:
+            execution_start: 1789698642179
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 4967bc41e4674575b70e2ed133b8a49a
+          blockGroup: 94abbb6cef4942e5b89fd5e4e11d03da
+          sortingKey: "000010"
+          type: text-cell-p
+          content: " Información General"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 20
+                fromCodePoint: 1
+        - id: 47ba05f2ab03450fbb3518461d95fcfe
+          blockGroup: d8161375158f493a8477ef051d43bfd2
+          sortingKey: "000011"
+          type: text-cell-p
+          content: Se analizaron los tipos de datos presentes en el dataset.
+          metadata:
+            formattedRanges: []
+        - id: 1486c9a5290246bd94fa0ce06b92eca0
+          blockGroup: 511741e9438e4b77b84531f27a6f56fa
+          sortingKey: "000012"
+          type: text-cell-p
+          content: Se observan variables categóricas como cultivo, campaña y provincia, además de variables numéricas relacionadas
+            con superficie, producción y rendimiento.
+          metadata:
+            formattedRanges: []
+        - id: 2fe7a68f94e1414bb860cf796d2dc82c
+          blockGroup: 85f5dd182dbf448da79c65a5384251ad
+          sortingKey: "000013"
+          contentHash: de1e323c
+          executionCount: 3
+          executionFinishedAt: 2026-09-18T02:30:42.224Z
+          executionStartedAt: 2026-09-18T02:30:42.223Z
+          outputs:
+            - name: stdout
+              text: >
+                <class 'pandas.core.frame.DataFrame'>
+
+                RangeIndex: 160499 entries, 0 to 160498
+
+                Data columns (total 11 columns):
+                 #   Column                   Non-Null Count   Dtype  
+                ---  ------                   --------------   -----  
+                 0   cultivo                  160499 non-null  object 
+                 1   anio                     160499 non-null  int64  
+                 2   campania                 160499 non-null  object 
+                 3   provincia                160491 non-null  object 
+                 4   provincia_id             160491 non-null  float64
+                 5   departamento             160491 non-null  object 
+                 6   departamento_id          160491 non-null  float64
+                 7   superficie_sembrada_ha   160499 non-null  int64  
+                 8   superficie_cosechada_ha  160499 non-null  int64  
+                 9   produccion_tm            160499 non-null  int64  
+                 10  rendimiento_kgxha        160499 non-null  int64  
+                dtypes: float64(2), int64(5), object(4)
+
+                memory usage: 13.5+ MB
+              output_type: stream
+          type: code
+          content: df.info()
+          metadata:
+            execution_start: 1789698642223
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 11968bca2eba4399812620ac87ca2766
+          blockGroup: b27ae60c7a2f461c8c022a9284ac7ead
+          sortingKey: "000014"
+          type: text-cell-p
+          content: Vista inicial
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 13
+                fromCodePoint: 0
+        - id: 0d71c4cff9ea4ebba4475d0bbc5c6107
+          blockGroup: 414b59d9e7dc4e8ea5c00b7c839fb6e8
+          sortingKey: "000015"
+          type: text-cell-p
+          content: Se visualizan las primeras filas para conocer la estructura general del conjunto de datos.
+          metadata:
+            formattedRanges: []
+        - id: fc14aff918c64cbfb23c5387a32e9dcd
+          blockGroup: b7988bd946af4432954d9e703d60af58
+          sortingKey: "000016"
+          contentHash: c085b6ba
+          executionCount: 4
+          executionFinishedAt: 2026-09-18T02:30:42.280Z
+          executionStartedAt: 2026-09-18T02:30:42.279Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 4
+              data:
+                application/vnd.deepnote.dataframe.v3+json:
+                  column_count: 11
+                  columns:
+                    - name: cultivo
+                      dtype: object
+                      stats:
+                        unique_count: 1
+                        nan_count: 0
+                        min: null
+                        max: null
+                        histogram: null
+                        categories:
+                          - name: ajo
+                            count: 5
+                    - name: anio
+                      dtype: int64
+                      stats:
+                        unique_count: 1
+                        nan_count: 0
+                        min: "1969"
+                        max: "1969"
+                        histogram:
+                          - bin_start: 1968.5
+                            bin_end: 1968.6
+                            count: 0
+                          - bin_start: 1968.6
+                            bin_end: 1968.7
+                            count: 0
+                          - bin_start: 1968.7
+                            bin_end: 1968.8
+                            count: 0
+                          - bin_start: 1968.8
+                            bin_end: 1968.9
+                            count: 0
+                          - bin_start: 1968.9
+                            bin_end: 1969
+                            count: 0
+                          - bin_start: 1969
+                            bin_end: 1969.1
+                            count: 5
+                          - bin_start: 1969.1
+                            bin_end: 1969.2
+                            count: 0
+                          - bin_start: 1969.2
+                            bin_end: 1969.3
+                            count: 0
+                          - bin_start: 1969.3
+                            bin_end: 1969.4
+                            count: 0
+                          - bin_start: 1969.4
+                            bin_end: 1969.5
+                            count: 0
+                        categories: null
+                    - name: campania
+                      dtype: object
+                      stats:
+                        unique_count: 1
+                        nan_count: 0
+                        min: null
+                        max: null
+                        histogram: null
+                        categories:
+                          - name: 1969/1970
+                            count: 5
+                    - name: provincia
+                      dtype: object
+                      stats:
+                        unique_count: 1
+                        nan_count: 0
+                        min: null
+                        max: null
+                        histogram: null
+                        categories:
+                          - name: Buenos Aires
+                            count: 5
+                    - name: provincia_id
+                      dtype: float64
+                      stats:
+                        unique_count: 1
+                        nan_count: 0
+                        min: "6.0"
+                        max: "6.0"
+                        histogram:
+                          - bin_start: 5.5
+                            bin_end: 5.6
+                            count: 0
+                          - bin_start: 5.6
+                            bin_end: 5.7
+                            count: 0
+                          - bin_start: 5.7
+                            bin_end: 5.8
+                            count: 0
+                          - bin_start: 5.8
+                            bin_end: 5.9
+                            count: 0
+                          - bin_start: 5.9
+                            bin_end: 6
+                            count: 0
+                          - bin_start: 6
+                            bin_end: 6.1
+                            count: 5
+                          - bin_start: 6.1
+                            bin_end: 6.2
+                            count: 0
+                          - bin_start: 6.2
+                            bin_end: 6.3
+                            count: 0
+                          - bin_start: 6.3
+                            bin_end: 6.4
+                            count: 0
+                          - bin_start: 6.4
+                            bin_end: 6.5
+                            count: 0
+                        categories: null
+                    - name: departamento
+                      dtype: object
+                      stats:
+                        unique_count: 5
+                        nan_count: 0
+                        min: null
+                        max: null
+                        histogram: null
+                        categories:
+                          - name: 25 de Mayo
+                            count: 1
+                          - name: Adolfo Gonzales Chaves
+                            count: 1
+                          - name: 3 others
+                            count: 3
+                    - name: departamento_id
+                      dtype: float64
+                      stats:
+                        unique_count: 5
+                        nan_count: 0
+                        min: "6014.0"
+                        max: "6854.0"
+                        histogram:
+                          - bin_start: 6014
+                            bin_end: 6098
+                            count: 3
+                          - bin_start: 6098
+                            bin_end: 6182
+                            count: 1
+                          - bin_start: 6182
+                            bin_end: 6266
+                            count: 0
+                          - bin_start: 6266
+                            bin_end: 6350
+                            count: 0
+                          - bin_start: 6350
+                            bin_end: 6434
+                            count: 0
+                          - bin_start: 6434
+                            bin_end: 6518
+                            count: 0
+                          - bin_start: 6518
+                            bin_end: 6602
+                            count: 0
+                          - bin_start: 6602
+                            bin_end: 6686
+                            count: 0
+                          - bin_start: 6686
+                            bin_end: 6770
+                            count: 0
+                          - bin_start: 6770
+                            bin_end: 6854
+                            count: 1
+                        categories: null
+                    - name: superficie_sembrada_ha
+                      dtype: int64
+                      stats:
+                        unique_count: 4
+                        nan_count: 0
+                        min: "2"
+                        max: "450"
+                        histogram:
+                          - bin_start: 2
+                            bin_end: 46.8
+                            count: 4
+                          - bin_start: 46.8
+                            bin_end: 91.6
+                            count: 0
+                          - bin_start: 91.6
+                            bin_end: 136.39999999999998
+                            count: 0
+                          - bin_start: 136.39999999999998
+                            bin_end: 181.2
+                            count: 0
+                          - bin_start: 181.2
+                            bin_end: 226
+                            count: 0
+                          - bin_start: 226
+                            bin_end: 270.79999999999995
+                            count: 0
+                          - bin_start: 270.79999999999995
+                            bin_end: 315.59999999999997
+                            count: 0
+                          - bin_start: 315.59999999999997
+                            bin_end: 360.4
+                            count: 0
+                          - bin_start: 360.4
+                            bin_end: 405.2
+                            count: 0
+                          - bin_start: 405.2
+                            bin_end: 450
+                            count: 1
+                        categories: null
+                    - name: superficie_cosechada_ha
+                      dtype: int64
+                      stats:
+                        unique_count: 4
+                        nan_count: 0
+                        min: "2"
+                        max: "450"
+                        histogram:
+                          - bin_start: 2
+                            bin_end: 46.8
+                            count: 4
+                          - bin_start: 46.8
+                            bin_end: 91.6
+                            count: 0
+                          - bin_start: 91.6
+                            bin_end: 136.39999999999998
+                            count: 0
+                          - bin_start: 136.39999999999998
+                            bin_end: 181.2
+                            count: 0
+                          - bin_start: 181.2
+                            bin_end: 226
+                            count: 0
+                          - bin_start: 226
+                            bin_end: 270.79999999999995
+                            count: 0
+                          - bin_start: 270.79999999999995
+                            bin_end: 315.59999999999997
+                            count: 0
+                          - bin_start: 315.59999999999997
+                            bin_end: 360.4
+                            count: 0
+                          - bin_start: 360.4
+                            bin_end: 405.2
+                            count: 0
+                          - bin_start: 405.2
+                            bin_end: 450
+                            count: 1
+                        categories: null
+                    - name: produccion_tm
+                      dtype: int64
+                      stats:
+                        unique_count: 5
+                        nan_count: 0
+                        min: "7"
+                        max: "2025"
+                        histogram:
+                          - bin_start: 7
+                            bin_end: 208.8
+                            count: 4
+                          - bin_start: 208.8
+                            bin_end: 410.6
+                            count: 0
+                          - bin_start: 410.6
+                            bin_end: 612.4000000000001
+                            count: 0
+                          - bin_start: 612.4000000000001
+                            bin_end: 814.2
+                            count: 0
+                          - bin_start: 814.2
+                            bin_end: 1016
+                            count: 0
+                          - bin_start: 1016
+                            bin_end: 1217.8000000000002
+                            count: 0
+                          - bin_start: 1217.8000000000002
+                            bin_end: 1419.6000000000001
+                            count: 0
+                          - bin_start: 1419.6000000000001
+                            bin_end: 1621.4
+                            count: 0
+                          - bin_start: 1621.4
+                            bin_end: 1823.2
+                            count: 0
+                          - bin_start: 1823.2
+                            bin_end: 2025
+                            count: 1
+                        categories: null
+                    - name: rendimiento_kgxha
+                      dtype: int64
+                      stats:
+                        unique_count: 5
+                        nan_count: 0
+                        min: "3333"
+                        max: "5467"
+                        histogram:
+                          - bin_start: 3333
+                            bin_end: 3546.4
+                            count: 2
+                          - bin_start: 3546.4
+                            bin_end: 3759.8
+                            count: 0
+                          - bin_start: 3759.8
+                            bin_end: 3973.2
+                            count: 0
+                          - bin_start: 3973.2
+                            bin_end: 4186.6
+                            count: 1
+                          - bin_start: 4186.6
+                            bin_end: 4400
+                            count: 0
+                          - bin_start: 4400
+                            bin_end: 4613.4
+                            count: 1
+                          - bin_start: 4613.4
+                            bin_end: 4826.8
+                            count: 0
+                          - bin_start: 4826.8
+                            bin_end: 5040.2
+                            count: 0
+                          - bin_start: 5040.2
+                            bin_end: 5253.6
+                            count: 0
+                          - bin_start: 5253.6
+                            bin_end: 5467
+                            count: 1
+                        categories: null
+                    - name: _deepnote_index_column
+                      dtype: int64
+                  row_count: 5
+                  preview_row_count: 5
+                  rows:
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: 25 de Mayo
+                      departamento_id: 6854
+                      superficie_sembrada_ha: 3
+                      superficie_cosechada_ha: 3
+                      produccion_tm: 10
+                      rendimiento_kgxha: 3333
+                      _deepnote_index_column: 0
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Adolfo Gonzales Chaves
+                      departamento_id: 6014
+                      superficie_sembrada_ha: 15
+                      superficie_cosechada_ha: 15
+                      produccion_tm: 82
+                      rendimiento_kgxha: 5467
+                      _deepnote_index_column: 1
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Almirante Brown
+                      departamento_id: 6028
+                      superficie_sembrada_ha: 2
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 8
+                      rendimiento_kgxha: 4000
+                      _deepnote_index_column: 2
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Balcarce
+                      departamento_id: 6063
+                      superficie_sembrada_ha: 450
+                      superficie_cosechada_ha: 450
+                      produccion_tm: 2025
+                      rendimiento_kgxha: 4500
+                      _deepnote_index_column: 3
+                    - cultivo: ajo
+                      anio: 1969
+                      campania: 1969/1970
+                      provincia: Buenos Aires
+                      provincia_id: 6
+                      departamento: Cañuelas
+                      departamento_id: 6134
+                      superficie_sembrada_ha: 2
+                      superficie_cosechada_ha: 2
+                      produccion_tm: 7
+                      rendimiento_kgxha: 3500
+                      _deepnote_index_column: 4
+                  type: dataframe
+                text/plain: >2-
+                    cultivo  anio   campania     provincia  provincia_id  \
+                  0     ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  1     ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  2     ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  3     ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                  4     ajo  1969  1969/1970  Buenos Aires           6.0   
+
+                               departamento  departamento_id  superficie_sembrada_ha  \
+                  0              25 de Mayo           6854.0                       3   
+
+                  1  Adolfo Gonzales Chaves           6014.0                      15   
+
+                  2         Almirante Brown           6028.0                       2   
+
+                  3                Balcarce           6063.0                     450   
+
+                  4                Cañuelas           6134.0                       2   
+
+                     superficie_cosechada_ha  produccion_tm  rendimiento_kgxha  
+                  0                        3             10               3333  
+
+                  1                       15             82               5467  
+
+                  2                        2              8               4000  
+
+                  3                      450           2025               4500  
+
+                  4                        2              7               3500  
+                text/html: >-
+                  <div>
+
+                  <style scoped>
+                      .dataframe tbody tr th:only-of-type {
+                          vertical-align: middle;
+                      }
+
+                      .dataframe tbody tr th {
+                          vertical-align: top;
+                      }
+
+                      .dataframe thead th {
+                          text-align: right;
+                      }
+                  </style>
+
+                  <table border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align: right;">
+                        <th></th>
+                        <th>cultivo</th>
+                        <th>anio</th>
+                        <th>campania</th>
+                        <th>provincia</th>
+                        <th>provincia_id</th>
+                        <th>departamento</th>
+                        <th>departamento_id</th>
+                        <th>superficie_sembrada_ha</th>
+                        <th>superficie_cosechada_ha</th>
+                        <th>produccion_tm</th>
+                        <th>rendimiento_kgxha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>0</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>25 de Mayo</td>
+                        <td>6854.0</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>3333</td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Adolfo Gonzales Chaves</td>
+                        <td>6014.0</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>82</td>
+                        <td>5467</td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Almirante Brown</td>
+                        <td>6028.0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>4000</td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Balcarce</td>
+                        <td>6063.0</td>
+                        <td>450</td>
+                        <td>450</td>
+                        <td>2025</td>
+                        <td>4500</td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>ajo</td>
+                        <td>1969</td>
+                        <td>1969/1970</td>
+                        <td>Buenos Aires</td>
+                        <td>6.0</td>
+                        <td>Cañuelas</td>
+                        <td>6134.0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>3500</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  </div>
+              metadata:
+                table_state_spec: null
+          type: code
+          content: df.head()
+          metadata:
+            execution_start: 1789698642279
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 7aeb1aafe32d438683be02df0c00c1d3
+          blockGroup: 0a3bf20e30a04b3599733714d8e5352b
+          sortingKey: "000017"
+          type: text-cell-p
+          content: Estadísticas descriptivas
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 25
+                fromCodePoint: 0
+        - id: 19e1892472b146a29f30972e61bdb0b6
+          blockGroup: 69c4dd1d6fdb495090fff27a76ab820a
+          sortingKey: "000018"
+          type: text-cell-p
+          content: Las estadísticas descriptivas permiten observar medidas como media, mínimo, máximo y percentiles para las
+            variables numéricas.
+          metadata:
+            formattedRanges: []
+        - id: a35698070eb24adbb38088f04cf4c689
+          blockGroup: 935701078a384f4e8f1265c03c60c0ea
+          sortingKey: "000019"
+          contentHash: f88152d9
+          executionCount: 5
+          executionFinishedAt: 2026-09-18T02:30:42.324Z
+          executionStartedAt: 2026-09-18T02:30:42.324Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 5
+              data:
+                application/vnd.deepnote.dataframe.v3+json:
+                  column_count: 7
+                  columns:
+                    - name: anio
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "17.077850115119954"
+                        max: "160499.0"
+                        histogram:
+                          - bin_start: 17.077850115119954
+                            bin_end: 16065.270065103608
+                            count: 7
+                          - bin_start: 16065.270065103608
+                            bin_end: 32113.4622800921
+                            count: 0
+                          - bin_start: 32113.4622800921
+                            bin_end: 48161.654495080584
+                            count: 0
+                          - bin_start: 48161.654495080584
+                            bin_end: 64209.846710069076
+                            count: 0
+                          - bin_start: 64209.846710069076
+                            bin_end: 80258.03892505757
+                            count: 0
+                          - bin_start: 80258.03892505757
+                            bin_end: 96306.23114004605
+                            count: 0
+                          - bin_start: 96306.23114004605
+                            bin_end: 112354.42335503454
+                            count: 0
+                          - bin_start: 112354.42335503454
+                            bin_end: 128402.61557002303
+                            count: 0
+                          - bin_start: 128402.61557002303
+                            bin_end: 144450.8077850115
+                            count: 0
+                          - bin_start: 144450.8077850115
+                            bin_end: 160499
+                            count: 1
+                        categories: null
+                    - name: provincia_id
+                      dtype: float64
+                      stats:
+                        unique_count: 7
+                        nan_count: 0
+                        min: "6.0"
+                        max: "160491.0"
+                        histogram:
+                          - bin_start: 6
+                            bin_end: 16054.5
+                            count: 7
+                          - bin_start: 16054.5
+                            bin_end: 32103
+                            count: 0
+                          - bin_start: 32103
+                            bin_end: 48151.5
+                            count: 0
+                          - bin_start: 48151.5
+                            bin_end: 64200
+                            count: 0
+                          - bin_start: 64200
+                            bin_end: 80248.5
+                            count: 0
+                          - bin_start: 80248.5
+                            bin_end: 96297
+                            count: 0
+                          - bin_start: 96297
+                            bin_end: 112345.5
+                            count: 0
+                          - bin_start: 112345.5
+                            bin_end: 128394
+                            count: 0
+                          - bin_start: 128394
+                            bin_end: 144442.5
+                            count: 0
+                          - bin_start: 144442.5
+                            bin_end: 160491
+                            count: 1
+                        categories: null
+                    - name: departamento_id
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "6000.0"
+                        max: "160491.0"
+                        histogram:
+                          - bin_start: 6000
+                            bin_end: 21449.1
+                            count: 2
+                          - bin_start: 21449.1
+                            bin_end: 36898.2
+                            count: 3
+                          - bin_start: 36898.2
+                            bin_end: 52347.3
+                            count: 0
+                          - bin_start: 52347.3
+                            bin_end: 67796.4
+                            count: 1
+                          - bin_start: 67796.4
+                            bin_end: 83245.5
+                            count: 0
+                          - bin_start: 83245.5
+                            bin_end: 98694.6
+                            count: 1
+                          - bin_start: 98694.6
+                            bin_end: 114143.7
+                            count: 0
+                          - bin_start: 114143.7
+                            bin_end: 129592.8
+                            count: 0
+                          - bin_start: 129592.8
+                            bin_end: 145041.9
+                            count: 0
+                          - bin_start: 145041.9
+                            bin_end: 160491
+                            count: 1
+                        categories: null
+                    - name: superficie_sembrada_ha
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "0.0"
+                        max: "894613.0"
+                        histogram:
+                          - bin_start: 0
+                            bin_end: 89461.3
+                            count: 6
+                          - bin_start: 89461.3
+                            bin_end: 178922.6
+                            count: 1
+                          - bin_start: 178922.6
+                            bin_end: 268383.9
+                            count: 0
+                          - bin_start: 268383.9
+                            bin_end: 357845.2
+                            count: 0
+                          - bin_start: 357845.2
+                            bin_end: 447306.5
+                            count: 0
+                          - bin_start: 447306.5
+                            bin_end: 536767.8
+                            count: 0
+                          - bin_start: 536767.8
+                            bin_end: 626229.1
+                            count: 0
+                          - bin_start: 626229.1
+                            bin_end: 715690.4
+                            count: 0
+                          - bin_start: 715690.4
+                            bin_end: 805151.7000000001
+                            count: 0
+                          - bin_start: 805151.7000000001
+                            bin_end: 894613
+                            count: 1
+                        categories: null
+                    - name: superficie_cosechada_ha
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "0.0"
+                        max: "883613.0"
+                        histogram:
+                          - bin_start: 0
+                            bin_end: 88361.3
+                            count: 6
+                          - bin_start: 88361.3
+                            bin_end: 176722.6
+                            count: 1
+                          - bin_start: 176722.6
+                            bin_end: 265083.9
+                            count: 0
+                          - bin_start: 265083.9
+                            bin_end: 353445.2
+                            count: 0
+                          - bin_start: 353445.2
+                            bin_end: 441806.5
+                            count: 0
+                          - bin_start: 441806.5
+                            bin_end: 530167.8
+                            count: 0
+                          - bin_start: 530167.8
+                            bin_end: 618529.1
+                            count: 0
+                          - bin_start: 618529.1
+                            bin_end: 706890.4
+                            count: 0
+                          - bin_start: 706890.4
+                            bin_end: 795251.7000000001
+                            count: 0
+                          - bin_start: 795251.7000000001
+                            bin_end: 883613
+                            count: 1
+                        categories: null
+                    - name: produccion_tm
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "0.0"
+                        max: "8620000.0"
+                        histogram:
+                          - bin_start: 0
+                            bin_end: 862000
+                            count: 7
+                          - bin_start: 862000
+                            bin_end: 1724000
+                            count: 0
+                          - bin_start: 1724000
+                            bin_end: 2586000
+                            count: 0
+                          - bin_start: 2586000
+                            bin_end: 3448000
+                            count: 0
+                          - bin_start: 3448000
+                            bin_end: 4310000
+                            count: 0
+                          - bin_start: 4310000
+                            bin_end: 5172000
+                            count: 0
+                          - bin_start: 5172000
+                            bin_end: 6034000
+                            count: 0
+                          - bin_start: 6034000
+                            bin_end: 6896000
+                            count: 0
+                          - bin_start: 6896000
+                            bin_end: 7758000
+                            count: 0
+                          - bin_start: 7758000
+                            bin_end: 8620000
+                            count: 1
+                        categories: null
+                    - name: rendimiento_kgxha
+                      dtype: float64
+                      stats:
+                        unique_count: 8
+                        nan_count: 0
+                        min: "0.0"
+                        max: "300000.0"
+                        histogram:
+                          - bin_start: 0
+                            bin_end: 30000
+                            count: 6
+                          - bin_start: 30000
+                            bin_end: 60000
+                            count: 0
+                          - bin_start: 60000
+                            bin_end: 90000
+                            count: 0
+                          - bin_start: 90000
+                            bin_end: 120000
+                            count: 0
+                          - bin_start: 120000
+                            bin_end: 150000
+                            count: 0
+                          - bin_start: 150000
+                            bin_end: 180000
+                            count: 1
+                          - bin_start: 180000
+                            bin_end: 210000
+                            count: 0
+                          - bin_start: 210000
+                            bin_end: 240000
+                            count: 0
+                          - bin_start: 240000
+                            bin_end: 270000
+                            count: 0
+                          - bin_start: 270000
+                            bin_end: 300000
+                            count: 1
+                        categories: null
+                    - name: _deepnote_index_column
+                      dtype: object
+                  row_count: 8
+                  preview_row_count: 8
+                  rows:
+                    - anio: 160499
+                      provincia_id: 160491
+                      departamento_id: 160491
+                      superficie_sembrada_ha: 160499
+                      superficie_cosechada_ha: 160499
+                      produccion_tm: 160499
+                      rendimiento_kgxha: 160499
+                      _deepnote_index_column: count
+                    - anio: 1993.4942834534795
+                      provincia_id: 33.96278919067113
+                      departamento_id: 34156.04657582045
+                      superficie_sembrada_ha: 12565.279546913065
+                      superficie_cosechada_ha: 11022.87953819027
+                      produccion_tm: 34385.99125228194
+                      rendimiento_kgxha: 3457.047483161889
+                      _deepnote_index_column: mean
+                    - anio: 17.077850115119954
+                      provincia_id: 29.476005567450812
+                      departamento_id: 29358.694900667022
+                      superficie_sembrada_ha: 36260.60421772005
+                      superficie_cosechada_ha: 34774.169647456656
+                      produccion_tm: 130061.57785524939
+                      rendimiento_kgxha: 5475.852515579473
+                      _deepnote_index_column: std
+                    - anio: 1969
+                      provincia_id: 6
+                      departamento_id: 6000
+                      superficie_sembrada_ha: 0
+                      superficie_cosechada_ha: 0
+                      produccion_tm: 0
+                      rendimiento_kgxha: 0
+                      _deepnote_index_column: min
+                    - anio: 1978
+                      provincia_id: 6
+                      departamento_id: 6672
+                      superficie_sembrada_ha: 200
+                      superficie_cosechada_ha: 74
+                      produccion_tm: 197
+                      rendimiento_kgxha: 1000
+                      _deepnote_index_column: 25%
+                    - anio: 1990
+                      provincia_id: 22
+                      departamento_id: 22070
+                      superficie_sembrada_ha: 1500
+                      superficie_cosechada_ha: 800
+                      produccion_tm: 1820
+                      rendimiento_kgxha: 2000
+                      _deepnote_index_column: 50%
+                    - anio: 2009
+                      provincia_id: 58
+                      departamento_id: 58007
+                      superficie_sembrada_ha: 9000
+                      superficie_cosechada_ha: 6275
+                      produccion_tm: 14800
+                      rendimiento_kgxha: 3500
+                      _deepnote_index_column: 75%
+                    - anio: 2024
+                      provincia_id: 94
+                      departamento_id: 94000
+                      superficie_sembrada_ha: 894613
+                      superficie_cosechada_ha: 883613
+                      produccion_tm: 8620000
+                      rendimiento_kgxha: 300000
+                      _deepnote_index_column: max
+                  type: dataframe
+                text/plain: >2-
+                                  anio   provincia_id  departamento_id  superficie_sembrada_ha  \
+                  count  160499.000000  160491.000000    160491.000000           160499.000000   
+
+                  mean     1993.494283      33.962789     34156.046576            12565.279547   
+
+                  std        17.077850      29.476006     29358.694901            36260.604218   
+
+                  min      1969.000000       6.000000      6000.000000                0.000000   
+
+                  25%      1978.000000       6.000000      6672.000000              200.000000   
+
+                  50%      1990.000000      22.000000     22070.000000             1500.000000   
+
+                  75%      2009.000000      58.000000     58007.000000             9000.000000   
+
+                  max      2024.000000      94.000000     94000.000000           894613.000000   
+
+                         superficie_cosechada_ha  produccion_tm  rendimiento_kgxha  
+                  count            160499.000000   1.604990e+05      160499.000000  
+
+                  mean              11022.879538   3.438599e+04        3457.047483  
+
+                  std               34774.169647   1.300616e+05        5475.852516  
+
+                  min                   0.000000   0.000000e+00           0.000000  
+
+                  25%                  74.000000   1.970000e+02        1000.000000  
+
+                  50%                 800.000000   1.820000e+03        2000.000000  
+
+                  75%                6275.000000   1.480000e+04        3500.000000  
+
+                  max              883613.000000   8.620000e+06      300000.000000  
+                text/html: >-
+                  <div>
+
+                  <style scoped>
+                      .dataframe tbody tr th:only-of-type {
+                          vertical-align: middle;
+                      }
+
+                      .dataframe tbody tr th {
+                          vertical-align: top;
+                      }
+
+                      .dataframe thead th {
+                          text-align: right;
+                      }
+                  </style>
+
+                  <table border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align: right;">
+                        <th></th>
+                        <th>anio</th>
+                        <th>provincia_id</th>
+                        <th>departamento_id</th>
+                        <th>superficie_sembrada_ha</th>
+                        <th>superficie_cosechada_ha</th>
+                        <th>produccion_tm</th>
+                        <th>rendimiento_kgxha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>count</th>
+                        <td>160499.000000</td>
+                        <td>160491.000000</td>
+                        <td>160491.000000</td>
+                        <td>160499.000000</td>
+                        <td>160499.000000</td>
+                        <td>1.604990e+05</td>
+                        <td>160499.000000</td>
+                      </tr>
+                      <tr>
+                        <th>mean</th>
+                        <td>1993.494283</td>
+                        <td>33.962789</td>
+                        <td>34156.046576</td>
+                        <td>12565.279547</td>
+                        <td>11022.879538</td>
+                        <td>3.438599e+04</td>
+                        <td>3457.047483</td>
+                      </tr>
+                      <tr>
+                        <th>std</th>
+                        <td>17.077850</td>
+                        <td>29.476006</td>
+                        <td>29358.694901</td>
+                        <td>36260.604218</td>
+                        <td>34774.169647</td>
+                        <td>1.300616e+05</td>
+                        <td>5475.852516</td>
+                      </tr>
+                      <tr>
+                        <th>min</th>
+                        <td>1969.000000</td>
+                        <td>6.000000</td>
+                        <td>6000.000000</td>
+                        <td>0.000000</td>
+                        <td>0.000000</td>
+                        <td>0.000000e+00</td>
+                        <td>0.000000</td>
+                      </tr>
+                      <tr>
+                        <th>25%</th>
+                        <td>1978.000000</td>
+                        <td>6.000000</td>
+                        <td>6672.000000</td>
+                        <td>200.000000</td>
+                        <td>74.000000</td>
+                        <td>1.970000e+02</td>
+                        <td>1000.000000</td>
+                      </tr>
+                      <tr>
+                        <th>50%</th>
+                        <td>1990.000000</td>
+                        <td>22.000000</td>
+                        <td>22070.000000</td>
+                        <td>1500.000000</td>
+                        <td>800.000000</td>
+                        <td>1.820000e+03</td>
+                        <td>2000.000000</td>
+                      </tr>
+                      <tr>
+                        <th>75%</th>
+                        <td>2009.000000</td>
+                        <td>58.000000</td>
+                        <td>58007.000000</td>
+                        <td>9000.000000</td>
+                        <td>6275.000000</td>
+                        <td>1.480000e+04</td>
+                        <td>3500.000000</td>
+                      </tr>
+                      <tr>
+                        <th>max</th>
+                        <td>2024.000000</td>
+                        <td>94.000000</td>
+                        <td>94000.000000</td>
+                        <td>894613.000000</td>
+                        <td>883613.000000</td>
+                        <td>8.620000e+06</td>
+                        <td>300000.000000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  </div>
+              metadata:
+                table_state_spec: '{"sortBy":[],"filters":[],"pageSize":10,"pageIndex":0,"columnOrder":["superficie_sembrada_ha","superficie_cosechada_ha","produccion_tm","rendimiento_kgxha","anio","provincia_id","departamento_id"],"hiddenColumnIds":[],"columnDisplayNames":[],"conditionalFilters":[],"cellFormattingRules":[],"wrappedTextColumnIds":[]}'
+          type: code
+          content: df.describe()
+          metadata:
+            execution_start: 1789698642324
+            execution_millis: 0
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 10
+              pageIndex: 0
+              columnOrder:
+                - superficie_sembrada_ha
+                - superficie_cosechada_ha
+                - produccion_tm
+                - rendimiento_kgxha
+                - anio
+                - provincia_id
+                - departamento_id
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_loading: false
+        - id: 27bfb905fd2d486f868edb5922217879
+          blockGroup: 903627b2d19542e39251fba1ff339800
+          sortingKey: "000020"
+          type: text-cell-p
+          content: Valores Faltantes
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 17
+                fromCodePoint: 0
+        - id: 58d0fcb467f64abb9180dc2c77a90760
+          blockGroup: bc3e7cfe38bc4bccabd11ea79a5da95e
+          sortingKey: "000021"
+          type: text-cell-p
+          content: Se verifica la existencia de valores nulos dentro del dataset.
+          metadata:
+            formattedRanges: []
+        - id: 448f23ac21d44724b8293e5efa82bd0d
+          blockGroup: ccb5f9bb4e8d4eb28e38a155c5544138
+          sortingKey: "000022"
+          contentHash: f3dd26da
+          executionCount: 6
+          executionFinishedAt: 2026-09-18T02:30:42.368Z
+          executionStartedAt: 2026-09-18T02:30:42.367Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 6
+              data:
+                text/plain: >-
+                  cultivo                    0
+
+                  anio                       0
+
+                  campania                   0
+
+                  provincia                  8
+
+                  provincia_id               8
+
+                  departamento               8
+
+                  departamento_id            8
+
+                  superficie_sembrada_ha     0
+
+                  superficie_cosechada_ha    0
+
+                  produccion_tm              0
+
+                  rendimiento_kgxha          0
+
+                  dtype: int64
+              metadata: {}
+          type: code
+          content: df.isnull().sum()
+          metadata:
+            execution_start: 1789698642367
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 6758a574319d44b295fbd1339c183240
+          blockGroup: 34134e5e228b4a97a1f73ceeebe5068d
+          sortingKey: "000023"
+          type: text-cell-p
+          content: Analisis de Cultivos
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 20
+                fromCodePoint: 0
+        - id: 54136ba1487f44669196812089982aff
+          blockGroup: a69c19d051104eb9b414c5b2bcf0a01a
+          sortingKey: "000024"
+          type: text-cell-p
+          content: Se identifican los cultivos presentes en el conjunto de datos y su frecuencia.
+          metadata:
+            formattedRanges: []
+        - id: 41ebcbf6864c40c3a397bb48a05fee6f
+          blockGroup: 13763c1c9a3c433b8efafcfeec351988
+          sortingKey: "000025"
+          contentHash: 40fe9b7a
+          executionCount: 7
+          executionFinishedAt: 2026-09-18T02:30:42.424Z
+          executionStartedAt: 2026-09-18T02:30:42.423Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 7
+              data:
+                text/plain: >-
+                  cultivo
+
+                  maíz                17725
+
+                  trigo total         13292
+
+                  sorgo               12135
+
+                  soja total          11983
+
+                  avena               11534
+
+                  girasol             10647
+
+                  cebada forrajera     6572
+
+                  soja 1ra             6474
+
+                  centeno              6045
+
+                  papa total           5628
+
+                  soja 2da             5111
+
+                  cebada cervecera     4425
+
+                  cebolla total        4410
+
+                  algodón              4350
+
+                  ajo                  4097
+
+                  lino                 3991
+
+                  naranja              3035
+
+                  poroto total         2785
+
+                  mijo                 2662
+
+                  mandarina            2490
+
+                  alpiste              2248
+
+                  limón                2226
+
+                  arroz                2081
+
+                  maní                 2032
+
+                  pomelo               2003
+
+                  colza                1600
+
+                  cebada total         1364
+
+                  caña de azúcar       1299
+
+                  trigo candeal        1245
+
+                  yerba mate           1012
+
+                  té                    989
+
+                  tung                  681
+
+                  arveja                527
+
+                  cártamo               500
+
+                  banana                431
+
+                  garbanzo              305
+
+                  poroto negro          182
+
+                  poroto otros          155
+
+                  lenteja               148
+
+                  poroto alubia          60
+
+                  jojoba                 20
+
+                  Name: count, dtype: int64
+              metadata: {}
+          type: code
+          content: df["cultivo"].value_counts()
+          metadata:
+            execution_start: 1789698642423
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 0b22c7d6996e46928d934be2507275de
+          blockGroup: 23d99709f83e4a43a60d141fd56cd90f
+          sortingKey: "000026"
+          type: text-cell-p
+          content: Grafico
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 7
+                fromCodePoint: 0
+        - id: 689fab8467954679a71144cacbc564f3
+          blockGroup: 506bb202bc6e4ba892deeabf00d267e3
+          sortingKey: "000027"
+          contentHash: e8dfbd2e
+          executionCount: 8
+          executionFinishedAt: 2026-09-18T02:30:42.712Z
+          executionStartedAt: 2026-09-18T02:30:42.475Z
+          outputs:
+            - data:
+                text/plain: <Figure size 1000x500 with 1 Axes>
+                image/png: iVBORw0KGgoAAAANSUhEUgAAA2QAAAI8CAYAAACeQmjmAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjcsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvTLEjVAAAAAlwSFlzAAAPYQAAD2EBqD+naQAAhrNJREFUeJzs3Xl4TVf//vH7BEmEJIJEYopIzGIuQs0qhpofc2ueag7VUmrsU8rXWFOVon0oimqrihhKzTWPQYmpJKaSEkRi//7QnJ/TBAlhJ/F+Xde5mrP2yj733k3kfM7eay2LYRiGAAAAAACvnJ3ZAQAAAADgdUVBBgAAAAAmoSADAAAAAJNQkAEAAACASSjIAAAAAMAkFGQAAAAAYBIKMgAAAAAwCQUZAAAAAJiEggwAAAAATEJBBgDPYf78+bJYLDp79uwz+/7666+yWCz69ddfX3ou4HnkyZNH7du3f2a/xPzcJ1TVqlVVtWrV5/5+i8WiESNGJFmeV6l9+/bKkyeP2TEAmIyCDICpbt++reHDh6t27drKnDmzLBaL5s+f/8T+x48fV+3atZUxY0ZlzpxZ7777rq5evfrqAj/FjBkznpodMNP27ds1YsQI3bx50+woeAHHjh3TiBEjkrQoBmCutGYHAPB6u3btmkaNGqXcuXOrePHiT72KdPHiRVWuXFmurq769NNPdfv2bf3f//2fDh8+rN27d8ve3v7VBY/HjBkzlDVr1jhXGipXrqy7d++ang+vt+3bt2vkyJFq3769MmXKZLPtxIkTsrPjM9pX7csvv9TDhw8T9T3Hjh3TyJEjVbVqVa6uAakEBRkAU3l5eeny5cvy9PTUnj179MYbbzyx76effqo7d+5o7969yp07tySpbNmyeuuttzR//nx17dr1VcVOFDs7Ozk6OpodA6/QnTt3lCFDBrNjJJiDg4PZEZKthw8fKioq6qX8DqdLly7J9/k4wzB07949pU+f/qW+DoAXw8dhAEzl4OAgT0/PBPVdvny53n77bWsxJkk1a9ZU/vz5tXTp0md+/8OHDzVlyhT5+/vL0dFR7u7uql27tvbs2SNJOnv27BNvmXzWOJU8efLo6NGj2rx5sywWiywWi3VczL/HkPXq1UsZM2ZUZGRknP20atVKnp6eiomJsbbNmDFDRYoUkYODg7Jnz66ePXvGue3s1KlTatq0qTw9PeXo6KicOXOqZcuWunXr1jPPy65du1S3bl25ubkpQ4YMKlasmKZMmWLTZ+PGjapUqZIyZMigTJkyqWHDhjp+/LhNnxEjRshiseiPP/6wXoVxdXVVhw4d4j3Wf6tataqKFi2qQ4cOqUqVKnJycpKfn5+WLVsmSdq8ebPKlSun9OnTq0CBAlq/fr3N9587d049evRQgQIFlD59emXJkkXNmjWzubXrzJkzslgsmjRpUpzX3759uywWi7799ltr2/79+1WnTh25uLgoY8aMqlGjhnbu3GnzfbHjqjZv3qwePXrIw8NDOXPmfOqx3rt3TyNGjFD+/Pnl6OgoLy8vNWnSRKdPn7b2+b//+z9VqFBBWbJkUfr06VW6dGnruXicxWJRr169tHLlShUtWlQODg4qUqSI1qxZY+0zYsQIDRw4UJLk4+Nj/RmNPTfxjSE7evSoqlevrvTp0ytnzpz65JNP4r2a88MPP6hevXrKnj27HBwc5Ovrq9GjR9v8DMeaPXu2fH19lT59epUtW1a//fbbU8/T4+7fv6+goCC5u7vL2dlZDRo00MWLF+Pt++eff6pjx47Kli2b9Xx89dVXCXqd2PO5cOFC6+9d7LlM6H7PnTunBg0aKEOGDPLw8FBQUJDWrl0bZyxpfGPIFi9erNKlS8vZ2VkuLi7y9/e3/j7Onz9fzZo1kyRVq1bN+v8xdp958uTR22+/rbVr16pMmTJKnz69vvjiC0mPfvabNWumzJkzy8nJSeXLl9fPP/8cJ/vnn3+uIkWKyMnJSW5ubipTpowWLVqUoHMH4PlwhQxAivDnn3/qypUrKlOmTJxtZcuW1erVq5+5j06dOmn+/PmqU6eOOnfurOjoaP3222/auXNnvPtNjMmTJ6t3797KmDGjhgwZIknKli1bvH1btGih6dOn6+eff7a+uZKkyMhI/fTTT2rfvr3SpEkj6dEb6ZEjR6pmzZp67733dOLECc2cOVO///67tm3bpnTp0ikqKkqBgYG6f/++evfuLU9PT/35559atWqVbt68KVdX1yfmDg4O1ttvvy0vLy/17dtXnp6eOn78uFatWqW+fftKktavX686deoob968GjFihO7evavPP/9cFStW1L59++K8oWzevLl8fHw0ZswY7du3T3PmzJGHh4c+++yzZ57Hv/76S2+//bZatmypZs2aaebMmWrZsqUWLlyofv36qXv37mrdurXGjx+v//znP7pw4YKcnZ0lSb///ru2b9+uli1bKmfOnDp79qxmzpypqlWr6tixY3JyclLevHlVsWJFLVy4UEFBQTavvXDhQjk7O6thw4aSHhUklSpVkouLiz744AOlS5dOX3zxhapWrWotDh/Xo0cPubu7a9iwYbpz584TjzEmJkZvv/22NmzYoJYtW6pv3776+++/FRwcrCNHjsjX11eSNGXKFDVo0EBt2rRRVFSUFi9erGbNmmnVqlWqV6+ezT63bt2qFStWqEePHnJ2dtbUqVPVtGlTnT9/XlmyZFGTJk108uRJffvtt5o0aZKyZs0qSXJ3d483Y1hYmKpVq6bo6GgNGjRIGTJk0OzZs+O90jJ//nxlzJhR/fv3V8aMGbVx40YNGzZMERERGj9+vLXf3Llz1a1bN1WoUEH9+vXTmTNn1KBBA2XOnFm5cuV64vmK1blzZ/3vf/9T69atVaFCBW3cuDHOeZCk8PBwlS9f3lpYubu765dfflGnTp0UERGhfv36PfO1Nm7cqKVLl6pXr17KmjWr8uTJk+D93rlzR9WrV9fly5etv1OLFi3Spk2bnvm6wcHBatWqlWrUqGH9fTl+/Li2bdumvn37qnLlyurTp4+mTp2qjz76SIUKFZIk63+lR7eftmrVSt26dVOXLl1UoEABhYeHq0KFCoqMjFSfPn2UJUsWLViwQA0aNNCyZcvUuHFjSY9uoezTp4/+85//qG/fvrp3754OHTqkXbt2qXXr1s/MD+A5GQCQTPz++++GJGPevHlP3Pb111/H2TZw4EBDknHv3r0n7nvjxo2GJKNPnz5xtj18+NAwDMMIDQ194utLMoYPH259Pm/ePEOSERoaam0rUqSIUaVKlTjfu2nTJkOSsWnTJuvr5ciRw2jatKlNv6VLlxqSjC1bthiGYRhXrlwx7O3tjVq1ahkxMTHWftOmTTMkGV999ZVhGIaxf/9+Q5Lx3XffPfH44xMdHW34+PgY3t7exl9//WWzLfacGIZhlChRwvDw8DCuX79ubTt48KBhZ2dntG3b1to2fPhwQ5LRsWNHm301btzYyJIlyzPzVKlSxZBkLFq0yNoWEhJiSDLs7OyMnTt3WtvXrl0b5/9VZGRknH3u2LEjzs/NF198YUgyjh8/bm2LiooysmbNarRr187a1qhRI8Pe3t44ffq0te3SpUuGs7OzUblyZWtb7M/Cm2++aURHRz/zOL/66itDkjFx4sQ42x4/7/8+nqioKKNo0aJG9erVbdolGfb29sYff/xhbTt48KAhyfj888+tbePHj4/zMxvL29vb5tj79etnSDJ27dplbbty5Yrh6uoaZx/xnfdu3boZTk5O1t/JqKgow8PDwyhRooRx//59a7/Zs2cbkuL9vXncgQMHDElGjx49bNpbt24d53ezU6dOhpeXl3Ht2jWbvi1btjRcXV3jzfu42J+3o0eP2rQndL8TJkwwJBkrV6609rl7965RsGBBm38HDMMw2rVrZ3h7e1uf9+3b13BxcXnqz9F3330XZz+xvL29DUnGmjVrbNpj/3/+9ttv1ra///7b8PHxMfLkyWP996Vhw4ZGkSJFnvjaAF4OblkEkCLcvXtXUvxjXWLHdsT2ic/y5ctlsVg0fPjwONssFksSpUwYi8WiZs2aafXq1bp9+7a1fcmSJcqRI4fefPNNSY+uTEVFRalfv342Ey506dJFLi4u1tuNYq+ArV27NkG3Bsbav3+/QkND1a9fvziTPMSek8uXL+vAgQNq3769MmfObN1erFgxvfXWW/FemezevbvN80qVKun69euKiIh4ZqaMGTOqZcuW1ucFChRQpkyZVKhQIZsrUrFfnzlzxtr2+NWbBw8e6Pr16/Lz81OmTJm0b98+67bmzZvL0dFRCxcutLatXbtW165d0zvvvCPp0VWsdevWqVGjRsqbN6+1n5eXl1q3bq2tW7fGOZ4uXbpYr2w+zfLly5U1a1b17t07zrbHfxYfP56//vpLt27dUqVKlWyOJVbNmjWtV9akR/9/XFxcbM5PYqxevVrly5dX2bJlrW3u7u5q06ZNnL6P5/z777917do1VapUSZGRkQoJCZEk7dmzR1euXFH37t1tJrdp3779U6/gPp5Hkvr06WPT/u+rXYZhaPny5apfv74Mw9C1a9esj8DAQN26dSve8/dvVapUUeHChZ9rv2vWrFGOHDnUoEED6/c7OjqqS5cuz3zdTJky6c6dOwoODn5m3yfx8fFRYGCgTdvq1atVtmxZ678t0qPfta5du+rs2bM6duyY9fUvXryo33///blfH0DiUZABSBFi3/Tdv38/zrZ79+7Z9InP6dOnlT17dpuiwkwtWrTQ3bt39eOPP0p6NP3/6tWr1axZ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zRJ9y+K4ceNUo0YN7dmzR1FRUfrggw909OhR3bhxQ9u2bXsZGQEAAAAgVUr0FbKiRYvq5MmTevPNN9WwYUPduXNHTZo00f79++Xr6/syMgIAAABAqpSoguzBgweqUaOGrly5oiFDhmjp0qVavXq1PvnkE3l5eSX6xbds2aL69esre/bsslgsWrlypc12wzA0bNgweXl5KX369KpZs6ZOnTpl0+fGjRtq06aNXFxclClTJnXq1Em3b9+26XPo0CFVqlRJjo6OypUrl8aNGxcny3fffaeCBQvK0dFR/v7+Wr16daKPBwAAAAASI1EFWbp06XTo0KEke/E7d+6oePHimj59erzbx40bp6lTp2rWrFnatWuXMmTIoMDAQN27d8/ap02bNjp69KiCg4O1atUqbdmyRV27drVuj4iIUK1ateTt7a29e/dq/PjxGjFihGbPnm3ts337drVq1UqdOnXS/v371ahRIzVq1EhHjhxJsmMFAAAAgH9L9C2L77zzjubOnZskL16nTh198sknaty4cZxthmFo8uTJGjp0qBo2bKhixYrp66+/1qVLl6xX0o4fP641a9Zozpw5KleunN588019/vnnWrx4sS5duiRJWrhwoaKiovTVV1+pSJEiatmypfr06aOJEydaX2vKlCmqXbu2Bg4cqEKFCmn06NEqVaqUpk2bliTHCQAAAADxSfSkHtHR0frqq6+0fv16lS5dWhkyZLDZ/nih8yJCQ0MVFhammjVrWttcXV1Vrlw57dixQy1bttSOHTuUKVMmlSlTxtqnZs2asrOz065du9S4cWPt2LFDlStXlr29vbVPYGCgPvvsM/31119yc3PTjh071L9/f5vXDwwMjHML5ePu37+v+/fvW59HREQkwVEDAAAAeJ0kuiA7cuSISpUqJUk6efKkzTaLxZI0qSSFhYVJkrJly2bTni1bNuu2sLAweXh42GxPmzatMmfObNPHx8cnzj5it7m5uSksLOyprxOfMWPGaOTIkc9xZAAAAADwSKILsk2bNr2MHCnO4MGDba6qRUREKFeuXCYmAgAAAJDSJHoM2avi6ekpSQoPD7dpDw8Pt27z9PTUlStXbLZHR0frxo0bNn3i28fjr/GkPrHb4+Pg4CAXFxebBwAAAAAkRrItyHx8fOTp6akNGzZY2yIiIrRr1y4FBARIkgICAnTz5k3t3bvX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
+              metadata:
+                image/png:
+                  width: 868
+                  height: 572
+              output_type: display_data
+          type: code
+          content: >-
+            df["cultivo"].value_counts().head(10).plot(kind="bar", figsize=(10,5))
+
+
+            plt.title("10 cultivos con mayor cantidad de registros")
+
+            plt.xlabel("Cultivo")
+
+            plt.ylabel("Cantidad de registros")
+
+
+            plt.show()
+          metadata:
+            execution_start: 1789698642475
+            execution_millis: 237
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 54fa4e4d1059498cac582cfc13ef3506
+          blockGroup: a5585a37f063457698e22cec271b2929
+          sortingKey: "000028"
+          type: text-cell-p
+          content: Provincias
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 10
+                fromCodePoint: 0
+        - id: 37a9317c51c54d36bf55d904f7f8350f
+          blockGroup: b7555d8576714ea0a6ae52aa126c0454
+          sortingKey: "000029"
+          contentHash: e2c36c6
+          executionCount: 9
+          executionFinishedAt: 2026-09-18T02:30:42.764Z
+          executionStartedAt: 2026-09-18T02:30:42.763Z
+          outputs:
+            - output_type: execute_result
+              execution_count: 9
+              data:
+                text/plain: >-
+                  provincia
+
+                  Buenos Aires           53317
+
+                  Santa Fe               12168
+
+                  Córdoba                11727
+
+                  Chaco                   9606
+
+                  Entre Ríos              8823
+
+                  La Pampa                8589
+
+                  Corrientes              8320
+
+                  Misiones                7672
+
+                  Santiago del Estero     7614
+
+                  Salta                   6649
+
+                  Name: count, dtype: int64
+              metadata: {}
+          type: code
+          content: df["provincia"].value_counts().head(10)
+          metadata:
+            execution_start: 1789698642763
+            execution_millis: 1
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: df68d42eac3446b9bae9ac7689a71bfe
+          blockGroup: 28ccedc19b334966a57a7442553ee332
+          sortingKey: "000030"
+          contentHash: b1a78eb1
+          executionCount: 10
+          executionFinishedAt: 2026-09-18T02:30:42.871Z
+          executionStartedAt: 2026-09-18T02:30:42.827Z
+          outputs:
+            - data:
+                text/plain: <Figure size 640x480 with 1 Axes>
+                image/png: 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OGmbk5MTHjx4oLE9MzMTCQkJGn3y2sfLr/G6Pjnb82JiYgJra2uNBxERERVehkoHeJ1SpUrByckJ+/btQ9WqVQG8GKx14sQJDBo0CADg4+ODxMREhIeHo0aNGgCA/fv3Izs7G7Vr15b6TJgwAc+fP4eRkREAYM+ePShXrhzs7OykPvv27cOIESOk19+zZw98fHw+0NES5Q8OZiciKjiKnmlKSUlBZGQkIiMjAbwY/B0ZGYno6GioVCqMGDEC33zzDbZt24bz58+jd+/ecHZ2lu6w8/T0RMuWLfH555/j5MmTOHr0KIYMGYJu3brB2dkZAPDZZ5/B2NgY/fr1w8WLF7Fx40bMmzcPwcHBUo7hw4cjNDQUP/74I65cuYLJkyfj9OnTGDJkyId+S4iIiEhHKXqm6fTp02jSpIn0PKeQCQwMxKpVqzB27FikpqZiwIABSExMRP369REaGgpTU1Ppe9auXYshQ4agWbNmUKvV6NSpE+bPny9tt7Gxwe7duzF48GDUqFEDxYoVw8SJEzXmcqpbty7WrVuHr776Cl9++SXKlCmDP//8ExUrVvwA7wIRERHpA0WLpsaNG+NN00SpVCpMnToVU6dOfW2fIkWKYN26dW98ncqVK+Pff/99Y59PP/0Un3766ZsDExER0UdLZweCExEREekSnR0ITkQfLw5oJyJdxDNNRERERDLwTBMRUQEpDGtLEtH/YdFERESvxUulRP+Hl+eIiIiIZGDRRERERCQDiyYiIiIiGVg0EREREcnAgeBERFToFYYB7YXhGPQdzzQRERERycCiiYiIiEgGFk1EREREMrBoIiIiIpKBRRMRERGRDLx7joiIiD4Yfb4LkGeaiIiIiGRg0UREREQkA4smIiIiIhlYNBERERHJwKKJiIiISAYWTUREREQysGgiIiIikoFFExEREZEMLJqIiIiIZGDRRERERCQDiyYiIiIiGVg0EREREcnAoomIiIhIBhZNRERERDKwaCIiIiKSgUUTERERkQwsmoiIiIhkYNFEREREJAOLJiIiIiIZWDQRERERycCiiYiIiEgGFk1EREREMrBoIiIiIpKBRRMRERGRDCyaiIiIiGRg0UREREQkA4smIiIiIhlYNBERERHJwKKJiIiISAYWTUREREQysGgiIiIikoFFExEREZEMLJqIiIiIZGDRRERERCQDiyYiIiIi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S0tLWFhYaKwabmdnhydPnigVj4iIdJCNjQ3279+PiIgIqFQqqFQqnDlzBvv370dmZiY2btyIKlWq4OjRo0pH1VscCK6jXv1r4U0L9xIRETk5OeGzzz7DwoULoVa/OCeSnZ2N4cOHw8rKChs2bMDAgQMxbtw4HDlyROG0+omX53SQWq2Gv78/TExMAADbt29H06ZNYWFhAQBIT09HaGgosrKylIxJREQ6xN7eHkePHkXZsmU12q9du4a6devi0aNHOH/+PBo0aMDhHe+IZ5p0UGBgoMbznj175urTu3fvDxWHiIj0QGZmJq5cuZKraLpy5Yr0R7apqSmvXLwHFk06aOXKlUpHICIiPdOrVy/069cPX375JWrWrAngxYK93333nfSH9qFDh1ChQgUlY+o1Xp4jIiIqBLKysjBjxgwsXLgQcXFxAABHR0cMHToU48aNg4GBAaKjo6FWq1GiRAmF0+onFk1ERESFTHJyMoAX69FR/mHRRERERCQDxzQREREVElu2bMGmTZsQHR2NjIwMjW0REREKpSo8OLklERFRITB//nwEBQXB0dERZ86cQa1atVC0aFHcunUL/v7+SscrFHh5joiIqBAoX748Jk2ahO7du8PKygpnz55F6dKlMXHiRCQkJGDhwoVKR9R7PNNERERUCERHR6Nu3boAADMzM2m5rV69emH9+vVKRis0WDQREREVAk5OTkhISAAAuLq64vjx4wCAqKgo8KJS/mDRREREVAg0bdoU27ZtAwAEBQVh5MiRaN68Obp27YoOHToonK5w4JgmIiKiQiA7OxvZ2dkwNHxxY/yGDRtw7NgxlClTBl988QWMjY0VTqj/WDQRERERycB5moiIiPTUuXPnULFiRajVapw7d+6NfStXrvyBUhVePNNERESkp9RqNWJjY+Hg4AC1Wg2VSpXnoG+VSoWsrCwFEhYuPNNERESkp6KiomBvby99TQWLRRMREZGecnNzk76+c+cO6tatKw0Ez5GZmYljx45p9KV3w8tzREREhYCBgQH+++8/ODg4aLTHx8fDwcGBl+fyAedpIiIiKgSEEFCpVLna4+PjYWFhoUCiwoeX54iIiPRYx44dAbwY7N2nTx+YmJhI27KysnDu3DlpeRV6PyyaiIiI9JiNjQ2AF2earKysYGZmJm0zNjZGnTp18PnnnysVr1DhmCYiIqJCYMqU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
+              metadata:
+                image/png:
+                  width: 589
+                  height: 577
+              output_type: display_data
+          type: code
+          content: >-
+            df["provincia"].value_counts().head(10).plot(kind="bar")
+
+            plt.ylabel("Cantidad de registros")
+
+            plt.title("Provincias con más registros")
+
+            plt.show()
+          metadata:
+            execution_start: 1789698642827
+            execution_millis: 44
+            execution_context_id: c9f24953-fd5b-4a5d-8e24-9b79d7da9b06
+        - id: 10f6caaab334462b839371143465ed7a
+          blockGroup: 0c83b316994c4d9aa2df13ae8010e0fd
+          sortingKey: "000031"
+          type: text-cell-p
+          content: "Conclusion:"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 11
+                fromCodePoint: 0
+        - id: a1572f54d2a5438482ef9cfbc41ea2dc
+          blockGroup: 53a990c6f39949b388524451cd9e2cfb
+          sortingKey: "000032"
+          type: text-cell-p
+          content: El dataset seleccionado contiene una gran cantidad de registros y variables relacionadas con la producción
+            agrícola argentina. Durante el análisis exploratorio se identificaron distintas categorías de cultivos y una
+            amplia cobertura territorial por provincias y departamentos. La información disponible resulta adecuada para
+            realizar análisis posteriores vinculados a producción agrícola, rendimiento y evolución de cultivos, por lo
+            que constituye una buena base.
+          metadata:
+            formattedRanges: []
+      executionMode: block
+      id: 0a3803aa871548189815f426e61e0d78
+      isModule: false
+      name: TP1 EDA
+version: 1.0.0
